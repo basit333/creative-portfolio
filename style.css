@@ -37,6 +37,7 @@ img {
   max-width: 100%;
 }
 
+/* Utility Classes */
 .bg--yellow {
   background: var(--color-yellow);
 }
@@ -80,8 +81,6 @@ img {
 .text--purple {
   color: var(--color-text-purple);
 }
-
-/*  */
 
 /* Header */
 .header {
@@ -254,7 +253,6 @@ img {
   width: 90px;
   height: 90px;
   margin-inline: auto;
-  /* margin-bottom: 28px; */
 }
 
 .our__experience-card--title {
@@ -263,7 +261,6 @@ img {
   line-height: 24px;
   font-weight: 400;
   color: var(--color-black);
-  /* margin-bottom: 12px; */
 }
 
 .our__experience-card--description {
@@ -275,8 +272,6 @@ img {
 }
 
 /* Work */
-/* .our__work {} */
-
 .our__work-content--box {
   max-width: 820px;
   margin: 0 auto 96px auto;
@@ -763,6 +758,18 @@ img {
   color: var(--color-white);
 }
 
+/* Hide the default arrows for number input */
+.input-number::-webkit-inner-spin-button,
+.input-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-number {
+  /* Firefox */
+  -moz-appearance: textfield;
+}
+
 .contact__form-input--box input::placeholder,
 .input__message::placeholder {
   font-family: var(--font-opensans);
@@ -832,8 +839,6 @@ img {
   height: auto;
   margin: 0 auto;
 }
-
-.contact__details-description {}
 
 .contact__details-description h3 {
   font-family: var(--font-montserrat);
