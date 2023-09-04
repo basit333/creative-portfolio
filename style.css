@@ -528,7 +528,7 @@ img {
 /* Price */
 .price {
   background: #F7B4D8;
-  padding: 221px 0 61px 0;
+  padding: 100px 0 61px 0;
 }
 
 .price__content-box {
@@ -728,7 +728,7 @@ img {
 
 /* Facts */
 .facts {
-  padding: 95px 0 0 0;
+  padding: 95px 0;
   background: var(--color-light-purple);
 }
 
@@ -1021,6 +1021,91 @@ img {
   line-height: 22px;
   font-weight: 400;
   color: var(--color-white);
+}
+
+.facts__tabs-btns-container {
+  display: flex;
+  align-items: center;
+  max-width: 915px;
+  margin: 0 auto 72px auto;
+  padding: 0 20px;
+  gap: 21px;
+}
+
+.tab-btn {
+  display: inline-block;
+  border: 0;
+  background: var(--color-white);
+  color: var(var(--color-black));
+  padding: 12px 25px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  font-family: var(--font-montserrat);
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.tab-btn:hover {
+  background: var(--color-red);
+  color: var(--color-white);
+}
+
+.tab-btn-active {
+  background: var(--color-red);
+  color: var(--color-white);
+}
+
+.tab-content-container {
+  max-width: 1024px;
+  margin: 0 auto 75px auto;
+  padding: 0 20px;
+}
+
+.tab-content-box {
+  display: none;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.tab-content-box img {
+  width: 31.3%;
+  height: auto;
+}
+
+.tab-content-box-active {
+  display: flex;
+}
+
+.tab-content-load-more-btn-box {
+  max-width: 100%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.tab-content-load-more-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-white);
+  background: var(--color-red);
+  text-transform: uppercase;
+  padding: 15px 50px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  transition: all .3s ease-in-out;
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.tab-content-load-more-btn:hover {
+  border-color: var(--color-red);
+  background: transparent;
+  color: var(--color-red);
 }
 
 /* Blog */
