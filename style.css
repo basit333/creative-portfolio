@@ -196,6 +196,15 @@ img {
   transform: scale(1.2);
 }
 
+/* Mobile Navbar */
+.navbar__hamburger-btn {
+  display: none;
+}
+
+.navbar__mobile {
+  display: none;
+}
+
 /* Hero */
 .hero {
   max-width: 1280px;
@@ -356,6 +365,7 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+  padding: 0 20px;
 }
 
 .our__services-card:not(:last-child) {
@@ -569,7 +579,7 @@ img {
 }
 
 .price__card-top--content {
-  padding: 46px 62px 15px 62px;
+  padding: 46px 40px 15px 40px;
   text-align: center;
 }
 
@@ -994,6 +1004,11 @@ img {
   text-align: center;
 }
 
+/* Swiper Slider Talented People */
+.swiper.talentedPeople {
+  display: none;
+}
+
 .facts__awesome-work--container {
   max-width: 100%;
   margin-top: 65px;
@@ -1160,7 +1175,7 @@ img {
 .blog__card-container--right-box {
   width: 50%;
   background: var(--color-white);
-  padding: 28px 20px 20px 48px;
+  padding: 28px 10px 20px 25px;
 }
 
 .blog__card-date {
@@ -1316,17 +1331,17 @@ img {
   color: var(--color-black);
 }
 
-/* Swiper Slider */
-.swiper {
+/* Swiper Slider Testimonial */
+.swiper.testimonialSlider {
   width: 100%;
   height: 350px;
 }
 
-.swiper-wrapper {
+.swiper-wrapper.testimonial-wrapper {
   margin-top: 50px;
 }
 
-.swiper-slide {
+.swiper-slide.testimonial-slide {
   text-align: center;
   font-size: 18px;
   background: transparent;
@@ -1581,4 +1596,267 @@ img {
   background-color: #000000;
   border-radius: 10px;
   border: 3px solid #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .navbar__links-box {
+    display: none;
+  }
+
+  .navbar__hamburger-btn {
+    display: block;
+    background: transparent;
+    border: 0;
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .navbar__hamburger-btn img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbar__mobile {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    z-index: -1;
+    height: 100%;
+    background: #fff;
+    transition: all .3s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  .navbar__mobile-open {
+    transform: translateX(0);
+    z-index: 1000;
+  }
+
+  .navbar__mobile-links--box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 20px;
+  }
+
+  .navbar__mobile-link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-black);
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .navbar__close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    background: transparent;
+    border: 0;
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .navbar__close-btn img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero__left-container {
+    width: 100%;
+  }
+
+  .hero__right-container {
+    width: 100%;
+    height: 500px;
+  }
+
+  .hero__right-img {
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .hero__arrow-down--btn {
+    display: none;
+  }
+
+  .about {
+    padding-bottom: 230px;
+  }
+
+  .our__services {
+    margin: 0 auto 110px auto;
+  }
+
+  .our__experience-card--container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .our__experience-card {
+    width: 45%;
+  }
+
+  .our__services-card,
+  .our__services-card:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .our__services-card--left-box {
+    width: 100%;
+  }
+
+  .our__services-card--right-box {
+    width: 100%;
+    height: 400px;
+  }
+
+  .our__services-card--right-box img {
+    object-fit: contain;
+  }
+
+  .steps__card,
+  .steps__card:nth-child(even) {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .steps__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .steps__card-left--box {
+    width: 100%;
+  }
+
+  .steps__card-middle--box {
+    width: 50%;
+    height: 250px;
+  }
+
+  .steps__card-middle--box img {
+    object-fit: contain;
+  }
+
+  .steps__card-right--box {
+    width: 100%;
+  }
+
+  .facts__card-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .facts__card {
+    width: 45%;
+  }
+
+  .facts__talented-people--container {
+    display: none;
+  }
+
+  .facts__talented-more--people-btn {
+    display: none;
+  }
+
+  .swiper.talentedPeople {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0 20px;
+  }
+
+  .swiper-slide.talented-slide {
+    /* text-align: center; */
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .facts__talented-people--card-arrow-left {
+    display: none;
+  }
+
+  .swiper-button-next.talented-people-button-next,
+  .swiper-button-prev.talented-people-button-prev {
+    background: var(--color-black);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+  }
+
+  .swiper-button-next.talented-people-button-next:after,
+  .swiper-button-prev.talented-people-button-prev:after {
+    font-size: 20px;
+    color: var(--color-white);
+  }
+
+  .facts__tabs-btns-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tab-content-box {
+    justify-content: space-between;
+  }
+
+  .tab-content-box img {
+    width: 45%;
+  }
+
+  .price__cards-container {
+    flex-direction: column;
+  }
+
+  .price__card,
+  .price__card-premium {
+    width: 100%;
+  }
+
+  .blog__card-footer {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 50px;
+    height: 50px;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 70px;
+    height: 70px;
+  }
+
+  .contact__details-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact__details-card {
+    width: 30%;
+  }
+
+  .footer__blue-box {
+    height: 150px;
+  }
 }

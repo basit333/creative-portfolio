@@ -1,4 +1,4 @@
-/*  Swiper Slider   */
+/*  Swiper Slider Testimonial  */
 var swiper = new Swiper(".testimonialSlider", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -6,6 +6,17 @@ var swiper = new Swiper(".testimonialSlider", {
   pagination: {
     el: ".swiper-pagination.testimonial-pagination",
     clickable: true,
+  },
+});
+
+/*  Swiper Slider Talented People  */
+var swiper = new Swiper(".talentedPeople", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next.talented-people-button-next",
+    prevEl: ".swiper-button-prev.talented-people-button-prev",
   },
 });
 
@@ -28,3 +39,20 @@ tabsBtn.forEach((tab) => {
     activeTabContent.classList.add("tab-content-box-active");
   });
 });
+
+/*  Mobile Navbar   */
+const navOpenBtn = document.querySelector(".navbar__hamburger-btn");
+const navCloseBtn = document.querySelector(".navbar__close-btn");
+const navMobileMenu = document.querySelector(".navbar__mobile");
+
+if (navOpenBtn) {
+  navOpenBtn.addEventListener("click", function () {
+    navMobileMenu.classList.add("navbar__mobile-open");
+  });
+}
+
+if (navCloseBtn) {
+  navCloseBtn.addEventListener("click", function () {
+    navMobileMenu.classList.remove("navbar__mobile-open");
+  });
+}
