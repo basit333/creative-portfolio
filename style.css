@@ -1355,14 +1355,14 @@ img {
   top: 0;
 }
 
-.swiper-pagination-bullet {
+.testimonial-pagination .swiper-pagination-bullet {
   width: 80px;
   height: 80px;
   background: var(--color-white);
   opacity: 1;
 }
 
-.swiper-pagination-bullet-active {
+.testimonial-pagination .swiper-pagination-bullet-active {
   width: 100px;
   height: 100px;
 }
@@ -1807,7 +1807,7 @@ img {
 
   .swiper-button-next.talented-people-button-next:after,
   .swiper-button-prev.talented-people-button-prev:after {
-    font-size: 20px;
+    font-size: 14px;
     color: var(--color-white);
   }
 
@@ -1838,12 +1838,12 @@ img {
     gap: 20px;
   }
 
-  .swiper-pagination-bullet {
+  .testimonial-pagination .swiper-pagination-bullet {
     width: 50px;
     height: 50px;
   }
 
-  .swiper-pagination-bullet-active {
+  .testimonial-pagination .swiper-pagination-bullet-active {
     width: 70px;
     height: 70px;
   }
