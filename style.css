@@ -1735,6 +1735,7 @@ img {
   .steps__card:nth-child(even) {
     flex-direction: column;
     gap: 30px;
+    text-align: center;
   }
 
   .steps__card:not(:last-child) {
