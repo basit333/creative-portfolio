@@ -126,7 +126,6 @@ img {
 /* Header */
 .header {
   background: var(--color-sea-blue);
-  padding: 0 20px;
   position: relative;
 }
 
@@ -544,6 +543,7 @@ img {
 .price__content-box {
   max-width: 725px;
   margin: 0 auto 50px auto;
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -1599,6 +1599,14 @@ img {
 }
 
 @media (max-width: 1024px) {
+  .header {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    padding: 0 20px;
+  }
+
   .navbar__links-box {
     display: none;
   }
@@ -1674,30 +1682,26 @@ img {
     height: 100%;
   }
 
-  .hero {
-    flex-direction: column;
+  .hero__left-container {
+    width: 50%;
   }
 
-  .hero__left-container {
-    width: 100%;
+  .hero__left-title {
+    font-size: 80px;
+    line-height: 90px;
   }
 
   .hero__right-container {
-    width: 100%;
+    width: 50%;
     height: 500px;
   }
 
   .hero__right-img {
     height: 100%;
-    object-fit: contain;
   }
 
   .hero__arrow-down--btn {
     display: none;
-  }
-
-  .about {
-    padding-bottom: 230px;
   }
 
   .our__services {
@@ -1729,6 +1733,14 @@ img {
 
   .our__services-card--right-box img {
     object-fit: contain;
+  }
+
+  .steps__card-middle--box-odd {
+    transform: translateX(0) translateY(0);
+  }
+
+  .steps__card-middle--box-even {
+    transform: translateX(0);
   }
 
   .steps__card,
@@ -1858,5 +1870,279 @@ img {
 
   .footer__blue-box {
     height: 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about {
+    padding-bottom: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__mobile {
+    width: 100%;
+  }
+
+  .hero__left-title {
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  .hero__right-container {
+    height: 400px;
+  }
+
+  .our__experience {
+    margin: 0 auto 80px auto;
+  }
+
+  .our__work-content--title,
+  .facts__top-content--title,
+  .facts__talented-people--top-content-title,
+  .facts__awesome-work--top-content-title,
+  .price__content-box h2,
+  .blog__top-content h2,
+  .contact__content-box h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .our__work-content--title,
+  .facts__awesome-work--top-content-title {
+    margin-bottom: 20px;
+  }
+
+  .facts__top-content--title,
+  .facts__talented-people--top-content-title,
+  .price__content-box h2,
+  .blog__top-content h2,
+  .contact__content-box h2 {
+    margin-bottom: 15px;
+  }
+
+  .our__work-content--box {
+    margin: 0 auto 40px auto;
+  }
+
+  .about {
+    padding-bottom: 130px;
+  }
+
+  .steps {
+    padding: 260px 0 80px 0;
+  }
+
+  .facts {
+    padding: 80px 0;
+  }
+
+  .blog__card {
+    flex-direction: column;
+  }
+
+  .blog__card-container--left-box {
+    width: 100%;
+    height: 300px;
+  }
+
+  .blog__card-container--right-box {
+    width: 100%;
+  }
+
+  .blog__btns-container {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .blog-input-email,
+  .blog__load-more--btn {
+    width: 100%;
+    padding: 35px
+  }
+
+  .price {
+    padding: 80px 0 20px 0;
+  }
+
+  .contact {
+    padding: 50px 0 45px 0;
+  }
+
+  .footer__blue-box {
+    height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero__left-container {
+    width: 100%;
+  }
+
+  .hero__right-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .about {
+    padding-top: 50px;
+  }
+
+  .our__experience {
+    margin: 0 auto 50px auto;
+  }
+
+  .our__services {
+    margin: 0 auto 50px auto;
+  }
+
+  .about {
+    padding-bottom: 70px;
+  }
+
+  .about__arrow-img {
+    margin: 0 auto 50px auto;
+  }
+
+  .steps {
+    padding: 240px 0 50px 0;
+  }
+
+  .facts {
+    padding: 50px 0;
+  }
+
+  .price {
+    padding: 50px 0 20px 0;
+  }
+
+  .price__cards-container {
+    margin: 0 auto 50px auto;
+  }
+
+  .testimonials__qoute-img {
+    width: 80px;
+    margin: 0 auto;
+  }
+
+  .testimonial-pagination .swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+  }
+
+  .testimonial-pagination .swiper-pagination-bullet-active {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact__form-input--box {
+    flex-direction: column;
+  }
+
+  .contact__form-input--box input {
+    width: 100%;
+  }
+
+  .contact__details-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  .our__services-card--right-box {
+    height: 250px;
+  }
+
+  .steps {
+    padding: 200px 0 50px 0;
+  }
+
+  .about__main-img {
+    bottom: -190px;
+  }
+
+  .facts__talented-people--card-d-row {
+    flex-direction: column;
+  }
+
+  .facts__talented-people--card-left-box {
+    width: 100%;
+    height: 200px;
+  }
+
+  .facts__talented-people--card-right-box {
+    width: 100%;
+  }
+
+  .price__card-top--subtitle,
+  .price__card-top--premium-subtitle {
+    margin-bottom: 20px;
+  }
+
+  .price__card-top-main-title,
+  .price__card-top-main--premium-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .price__card-top-main--premium-title {
+    margin-bottom: 18px;
+  }
+
+  .price__card-bottom--premium-content {
+    padding: 43px 42px 34px 42px;
+  }
+
+  .blog__card-container--left-box {
+    height: 200px;
+  }
+
+  .blog__card-description {
+    margin-bottom: 25px;
+  }
+
+  .blog-input-email,
+  .blog__load-more--btn {
+    padding: 20px;
+  }
+
+  .swiper.testimonialSlider {
+    height: 400px;
+  }
+
+  .our__experience-card {
+    width: 100%;
+  }
+
+  .about__main-img {
+    bottom: -165px;
+  }
+
+  .steps__card-middle--box {
+    height: auto;
+  }
+
+  .steps__card-middle--box img {
+    object-fit: cover;
+  }
+
+  .facts__card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 321px) {
+  .testimonial-pagination .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+  }
+
+  .testimonial-pagination .swiper-pagination-bullet-active {
+    width: 30px;
+    height: 30px;
   }
 }
