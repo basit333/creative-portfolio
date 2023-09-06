@@ -2135,6 +2135,12 @@ img {
   }
 }
 
+@media (max-width: 349px) {
+  .tab-content-box img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 321px) {
   .testimonial-pagination .swiper-pagination-bullet {
     width: 20px;
