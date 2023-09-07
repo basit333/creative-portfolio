@@ -27,16 +27,22 @@ const tabContent = document.querySelectorAll(".tab-content-box");
 tabsBtn.forEach((tab) => {
   tab.addEventListener("click", () => {
     // Remove active class from all tabs and tab content
-    tabsBtn.forEach((tab) => tab.classList.remove("tab-btn-active"));
-    tabContent.forEach((content) => content.classList.remove("tab-content-box-active"));
+    tabsBtn.forEach((tabBtn) => tabBtn.classList.remove("tab-btn-active"));
+    tabContent.forEach((content) => {
+      content.classList.remove("tab-content-box-active");
+      content.classList.remove("tab-content-box-active-opacity");
+    });
 
     // Add active class to the clicked tab
     tab.classList.add("tab-btn-active");
 
-    // Show the corresponding tab content with opacity animation
+    // Show the corresponding tab content
     const tabId = tab.getAttribute("data-tab");
     const activeTabContent = document.getElementById(tabId);
     activeTabContent.classList.add("tab-content-box-active");
+    setTimeout(() => {
+      activeTabContent.classList.add("tab-content-box-active-opacity");
+    }, 200);
   });
 });
 

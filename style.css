@@ -1085,6 +1085,8 @@ img {
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
 }
 
 .tab-content-box img {
@@ -1094,6 +1096,11 @@ img {
 
 .tab-content-box-active {
   display: flex;
+}
+
+.tab-content-box-active-opacity {
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
 }
 
 .tab-content-load-more-btn-box {
@@ -1563,39 +1570,6 @@ img {
   line-height: 18px;
   font-weight: 400;
   color: var(--color-black);
-}
-
-/* Animations */
-@keyframes moveUpDown {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-/* ===== Scrollbar CSS ===== */
-/* Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #000000 #ffffff;
-}
-
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 10px;
-}
-
-*::-webkit-scrollbar-track {
-  background: #ffffff;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #000000;
-  border-radius: 10px;
-  border: 3px solid #ffffff;
 }
 
 @media (max-width: 1024px) {
@@ -2151,4 +2125,37 @@ img {
     width: 30px;
     height: 30px;
   }
+}
+
+/* Animations */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
 }
