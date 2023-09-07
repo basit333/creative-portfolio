@@ -1052,7 +1052,7 @@ img {
   display: inline-block;
   border: 0;
   background: var(--color-white);
-  color: var(var(--color-black));
+  color: var(--color-black);
   padding: 12px 25px;
   text-transform: uppercase;
   border-radius: 2px;
@@ -1988,6 +1988,14 @@ img {
 
   .facts {
     padding: 50px 0;
+  }
+
+  .tab-btn {
+    padding: 12px 20px;
+  }
+
+  .facts__tabs-btns-container {
+    margin: 0 auto 50px auto;
   }
 
   .price {
